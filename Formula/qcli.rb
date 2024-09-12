@@ -5,21 +5,21 @@
 class Qcli < Formula
   desc "CLI tool written in Go, designed to streamline integrations from the terminal."
   homepage "https://github.com/quinn-collins/qcli"
-  version "0.1.1"
+  version "0.1.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/quinn-collins/qcli/releases/download/v0.1.1/qcli_Darwin_x86_64.tar.gz"
-      sha256 "f37cad22ac2d56a34c890b7f6307e50414d037d8fbcf9ec2e9fe0357ef872daa"
+      url "https://github.com/quinn-collins/qcli/releases/download/v0.1.0/qcli_Darwin_x86_64.tar.gz"
+      sha256 "2c8470aa8c7b1a4be58be42aeaab7c5b05d5fd4e03d2d27c1904a3b077570137"
 
       def install
         bin.install "qcli"
       end
     end
     on_arm do
-      url "https://github.com/quinn-collins/qcli/releases/download/v0.1.1/qcli_Darwin_arm64.tar.gz"
-      sha256 "3f4db59355609827370b47bf3663c97d7b05288b2a798ef1fffad03fa1908b2a"
+      url "https://github.com/quinn-collins/qcli/releases/download/v0.1.0/qcli_Darwin_arm64.tar.gz"
+      sha256 "815d4fa5bb57cb49e69224ac59bc8771dfe200e4b0e0ecd6d9a760164d846c18"
 
       def install
         bin.install "qcli"
@@ -30,8 +30,8 @@ class Qcli < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/quinn-collins/qcli/releases/download/v0.1.1/qcli_Linux_x86_64.tar.gz"
-        sha256 "2ae068d1c27ea25109b3b776e7a221555c7c21b9bc389ff3532f558d0eacc202"
+        url "https://github.com/quinn-collins/qcli/releases/download/v0.1.0/qcli_Linux_x86_64.tar.gz"
+        sha256 "b073a5706389f098c80d7cedd306fe4fd90f5b39eca3079feef9c43047b28125"
 
         def install
           bin.install "qcli"
@@ -40,8 +40,8 @@ class Qcli < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/quinn-collins/qcli/releases/download/v0.1.1/qcli_Linux_arm64.tar.gz"
-        sha256 "a8b98fc4a68c6f0312a598ac7c6fb6c1cbc430f875032d52300a2785c9cea1cb"
+        url "https://github.com/quinn-collins/qcli/releases/download/v0.1.0/qcli_Linux_arm64.tar.gz"
+        sha256 "1602a9658bd5f855640842d70c0ad23895a51de861b3a29bfe98cd45b8847728"
 
         def install
           bin.install "qcli"
